@@ -61,6 +61,39 @@
     });
 }
 
+#pragma mark - 动态cell
+//-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+//    return 1;//默认有3个
+//}
+//
+//-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+//    return self.dataArray.count;
+//}
+//
+//#pragma mark - tableView Delegate 默认显示
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return 64;
+//}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellIdentifier = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"tableView-detail -- %ld",indexPath.row];
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+
 /*
 #pragma mark - Navigation
 
