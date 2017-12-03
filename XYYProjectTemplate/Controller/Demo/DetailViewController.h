@@ -6,8 +6,8 @@
 //  Copyright © 2017年 xuyong. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "XYYTableViewController.h"
 
-@interface DetailViewController : ViewController
+@interface DetailViewController : XYYTableViewController
 
 @end

@@ -1,43 +1,88 @@
 //
-//  MainViewController.m
+//  XYYTableViewController.m
 //  XYYProjectTemplate
 //
 //  Created by xuyong on 2017/12/3.
 //  Copyright © 2017年 xuyong. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "DetailViewController.h"
+#import "XYYTableViewController.h"
 
-@interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface XYYTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong) UITableView *tableview;
+
 
 @end
 
-@implementation MainViewController
+@implementation XYYTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    self.title = @"title --- header";
-    self.view.backgroundColor = [UIColor whiteColor];
     
     [self tableViewLayoutViews];
 }
 
--(void)setNavBarViewBar
+-(void)reloadXYYTableView
 {
-    [self.navBarView setLeftWithTitle:@"home_app_logo" type:0];
-    [self.navBarView setMiddleWithWithTitle:@"首页" type:1];
-    //    [self.navBarView setRightWithTitle:@"home_lanch_video" type:0];
+    [self endRefreshingHeaderAndFooter];
+    [self.tableview reloadData];
 }
 
--(void)leftBtnClickByNavBarView:(SS_NavBarView *)navView
+-(void)reloadXYYTableViewHideFooter:(BOOL)hide
 {
-    
+    [self endRefreshingHeaderAndFooter];
+    [self.tableview reloadData];
+    if (self.tableview.mj_footer.isHidden != hide) {
+        [self hideFooterRefresh:hide];
+    }
 }
+
+#pragma mark - 上拉下拉加载更多数据
+- (void)addHeader
+{
+    __weak typeof(self) weakSelf = self;
+    self.tableview.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [weakSelf onHeaderWithRefreshing];
+    }];
+}
+
+-(void)addFooter{
+    __weak __typeof(self)weakSelf = self;
+    // 设置回调（一旦进入刷新状态就会调用这个refreshingBlock）
+    self.tableview.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        [weakSelf onFooterWithRefreshing];
+    }];
+    [self hideFooterRefresh:YES];
+}
+
+-(void)endRefreshingHeaderAndFooter
+{
+    [self.tableview.mj_header endRefreshing];
+    [self.tableview.mj_footer endRefreshing];
+}
+
+-(void)onHeaderWithRefreshing
+{
+    NSLog(@"onHeaderWithRefreshing - 执行");
+    [self hideFooterRefresh:NO];
+}
+
+-(void)onFooterWithRefreshing
+{
+    NSLog(@"onFooterWithRefreshing - 执行");
+}
+
+-(void)hideHeaderRefresh:(BOOL)hide
+{
+    [self.tableview.mj_header setHidden:hide];
+}
+
+-(void)hideFooterRefresh:(BOOL)hide
+{
+    [self.tableview.mj_footer setHidden:hide];
+}
+
+#pragma mark - tableview-
 
 -(void)tableViewLayoutViews{
     self.tableview = [[UITableView alloc] initWithFrame:CGRectMake(0,kTopHeight,SCREEN_WIDTH,SCREEN_HEIGHT - kTopHeight ) style:UITableViewStylePlain];
@@ -45,6 +90,11 @@
     self.tableview.delegate = self;
     self.tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:self.tableview];
+    
+    [self addHeader];
+    [self addFooter];
+    
+    [self.tableview.mj_header beginRefreshing];
 }
 
 #pragma mark - 动态cell
@@ -53,12 +103,12 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return self.dataArray.count;
 }
 
 #pragma mark - tableView Delegate 默认显示
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return kTopHeight;
+    return 64;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -70,16 +120,21 @@
         tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"tableview ---- %ld",indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"tableView -- %ld",indexPath.row];
     
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    DetailViewController *detail = [[DetailViewController alloc] init];
-    detail.title = [NSString stringWithFormat:@"title is num_%ld",(long)indexPath.row];
-    [self.navigationController pushViewController:detail animated:YES];
+}
+
+-(NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [[NSMutableArray alloc] init];
+    }
+    return _dataArray;
 }
 
 - (void)didReceiveMemoryWarning {

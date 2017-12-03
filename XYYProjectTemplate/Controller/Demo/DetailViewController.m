@@ -16,12 +16,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+}
+
+-(void)onHeaderWithRefreshing
+{
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //丢进后台处理的东西
+        NSMutableArray *middleArray = [[NSMutableArray alloc] init];
+        for (int i = 0; i < 100; i++) {
+            [middleArray addObject:[NSString stringWithFormat:@"arr - %d",i]];
+        }
+        weakSelf.dataArray = [middleArray mutableCopy];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //UI刷新放入主线程中
+            [weakSelf reloadXYYTableViewHideFooter:NO];
+        });
+    });
+}
+
+-(void)onFooterWithRefreshing
+{
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //丢进后台处理的东西
+        NSMutableArray *middleArray = [[NSMutableArray alloc] init];
+        for (int i = 0; i < 100; i++) {
+            [middleArray addObject:[NSString stringWithFormat:@"arr - %d",i]];
+        }
+        [weakSelf.dataArray addObjectsFromArray:middleArray];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //UI刷新放入主线程中
+            [weakSelf reloadXYYTableView];
+        });
+    });
 }
 
 /*

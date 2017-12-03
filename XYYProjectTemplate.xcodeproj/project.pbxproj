@@ -35,6 +35,7 @@
 		2E0D4A141FD3E24300F17CD9 /* home_app_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D4A131FD3E24300F17CD9 /* home_app_logo@2x.png */; };
 		2E0D4A161FD3E35000F17CD9 /* navi_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D4A151FD3E35000F17CD9 /* navi_back@2x.png */; };
 		2E0D4A1A1FD3E6AB00F17CD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A191FD3E6AB00F17CD9 /* ViewController.m */; };
+		2E0D4A1D1FD3EBEA00F17CD9 /* XYYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A1C1FD3EBEA00F17CD9 /* XYYTableViewController.m */; };
 		4232C234C7228CD4234E600B /* libPods-XYYProjectTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1623E659BD3D67BC11E3C0D9 /* libPods-XYYProjectTemplate.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,8 @@
 		2E0D4A151FD3E35000F17CD9 /* navi_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_back@2x.png"; sourceTree = "<group>"; };
 		2E0D4A181FD3E6AB00F17CD9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E0D4A191FD3E6AB00F17CD9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2E0D4A1B1FD3EBEA00F17CD9 /* XYYTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYYTableViewController.h; sourceTree = "<group>"; };
+		2E0D4A1C1FD3EBEA00F17CD9 /* XYYTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYYTableViewController.m; sourceTree = "<group>"; };
 		B508EBE6803EABAD63ECCCBC /* Pods-XYYProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYYProjectTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYYProjectTemplate/Pods-XYYProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -327,6 +330,8 @@
 			children = (
 				2E0D4A181FD3E6AB00F17CD9 /* ViewController.h */,
 				2E0D4A191FD3E6AB00F17CD9 /* ViewController.m */,
+				2E0D4A1B1FD3EBEA00F17CD9 /* XYYTableViewController.h */,
+				2E0D4A1C1FD3EBEA00F17CD9 /* XYYTableViewController.m */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -463,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0D4A1D1FD3EBEA00F17CD9 /* XYYTableViewController.m in Sources */,
 				2E0D49ED1FD3C51600F17CD9 /* UIView+Tools.m in Sources */,
 				2E0D49AB1FD3AE8D00F17CD9 /* main.m in Sources */,
 				2E0D49EC1FD3C51600F17CD9 /* UIView+LayerEffects.m in Sources */,
