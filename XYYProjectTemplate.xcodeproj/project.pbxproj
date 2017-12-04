@@ -12,9 +12,6 @@
 		2E0D49AB1FD3AE8D00F17CD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49AA1FD3AE8D00F17CD9 /* main.m */; };
 		2E0D49BA1FD3B5DE00F17CD9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49B91FD3B5DE00F17CD9 /* MainViewController.m */; };
 		2E0D49BD1FD3B97200F17CD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D49BC1FD3B97200F17CD9 /* Images.xcassets */; };
-		2E0D49CD1FD3C43C00F17CD9 /* NewHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49C61FD3C43C00F17CD9 /* NewHttpRequest.m */; };
-		2E0D49CE1FD3C43C00F17CD9 /* RequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49C81FD3C43C00F17CD9 /* RequestData.m */; };
-		2E0D49D01FD3C43C00F17CD9 /* RequestServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49CC1FD3C43C00F17CD9 /* RequestServer.m */; };
 		2E0D49D41FD3C44B00F17CD9 /* SS_NavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49D31FD3C44B00F17CD9 /* SS_NavBarView.m */; };
 		2E0D49EA1FD3C51600F17CD9 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49D91FD3C51500F17CD9 /* UIColor+YYAdd.m */; };
 		2E0D49EB1FD3C51600F17CD9 /* UIImage+TIXACategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49DA1FD3C51500F17CD9 /* UIImage+TIXACategory.m */; };
@@ -37,6 +34,12 @@
 		2E0D4A1A1FD3E6AB00F17CD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A191FD3E6AB00F17CD9 /* ViewController.m */; };
 		2E0D4A211FD4041900F17CD9 /* XYYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A201FD4041900F17CD9 /* XYYTableViewController.m */; };
 		2E0D4A241FD415A200F17CD9 /* XYYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A231FD415A200F17CD9 /* XYYTableViewCell.m */; };
+		2E3010C11FD5713900B92997 /* NewHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010BC1FD5713900B92997 /* NewHttpRequest.m */; };
+		2E3010C21FD5713900B92997 /* RequestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010BE1FD5713900B92997 /* RequestData.m */; };
+		2E3010C31FD5713900B92997 /* RequestServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010C01FD5713900B92997 /* RequestServer.m */; };
+		2E3010C81FD57DCB00B92997 /* NSDictionary+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010C71FD57DCA00B92997 /* NSDictionary+Tools.m */; };
+		2E3010CB1FD57E0F00B92997 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010C91FD57E0F00B92997 /* NSString+Tools.m */; };
+		2E3010CF1FD57EAE00B92997 /* JsonPraiseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010CE1FD57EAE00B92997 /* JsonPraiseModel.m */; };
 		4232C234C7228CD4234E600B /* libPods-XYYProjectTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1623E659BD3D67BC11E3C0D9 /* libPods-XYYProjectTemplate.a */; };
 /* End PBXBuildFile section */
 
@@ -54,12 +57,6 @@
 		2E0D49BB1FD3B6C100F17CD9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2E0D49BC1FD3B97200F17CD9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E0D49BF1FD3B9FE00F17CD9 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
-		2E0D49C51FD3C43C00F17CD9 /* NewHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewHttpRequest.h; sourceTree = "<group>"; };
-		2E0D49C61FD3C43C00F17CD9 /* NewHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewHttpRequest.m; sourceTree = "<group>"; };
-		2E0D49C71FD3C43C00F17CD9 /* RequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestData.h; sourceTree = "<group>"; };
-		2E0D49C81FD3C43C00F17CD9 /* RequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestData.m; sourceTree = "<group>"; };
-		2E0D49CB1FD3C43C00F17CD9 /* RequestServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestServer.h; sourceTree = "<group>"; };
-		2E0D49CC1FD3C43C00F17CD9 /* RequestServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestServer.m; sourceTree = "<group>"; };
 		2E0D49D21FD3C44B00F17CD9 /* SS_NavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_NavBarView.h; sourceTree = "<group>"; };
 		2E0D49D31FD3C44B00F17CD9 /* SS_NavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS_NavBarView.m; sourceTree = "<group>"; };
 		2E0D49D51FD3C51500F17CD9 /* CatagoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatagoryHeader.h; sourceTree = "<group>"; };
@@ -104,6 +101,19 @@
 		2E0D4A201FD4041900F17CD9 /* XYYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYYTableViewController.m; sourceTree = "<group>"; };
 		2E0D4A221FD415A200F17CD9 /* XYYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYYTableViewCell.h; sourceTree = "<group>"; };
 		2E0D4A231FD415A200F17CD9 /* XYYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYYTableViewCell.m; sourceTree = "<group>"; };
+		2E3010BB1FD5713900B92997 /* NewHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewHttpRequest.h; sourceTree = "<group>"; };
+		2E3010BC1FD5713900B92997 /* NewHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewHttpRequest.m; sourceTree = "<group>"; };
+		2E3010BD1FD5713900B92997 /* RequestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestData.h; sourceTree = "<group>"; };
+		2E3010BE1FD5713900B92997 /* RequestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestData.m; sourceTree = "<group>"; };
+		2E3010BF1FD5713900B92997 /* RequestServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestServer.h; sourceTree = "<group>"; };
+		2E3010C01FD5713900B92997 /* RequestServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestServer.m; sourceTree = "<group>"; };
+		2E3010C51FD5783C00B92997 /* RequestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestHeader.h; sourceTree = "<group>"; };
+		2E3010C61FD57DCA00B92997 /* NSDictionary+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Tools.h"; sourceTree = "<group>"; };
+		2E3010C71FD57DCA00B92997 /* NSDictionary+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Tools.m"; sourceTree = "<group>"; };
+		2E3010C91FD57E0F00B92997 /* NSString+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tools.m"; sourceTree = "<group>"; };
+		2E3010CA1FD57E0F00B92997 /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
+		2E3010CD1FD57EAE00B92997 /* JsonPraiseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonPraiseModel.h; sourceTree = "<group>"; };
+		2E3010CE1FD57EAE00B92997 /* JsonPraiseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonPraiseModel.m; sourceTree = "<group>"; };
 		B508EBE6803EABAD63ECCCBC /* Pods-XYYProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYYProjectTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYYProjectTemplate/Pods-XYYProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,6 +197,7 @@
 		2E0D49B31FD3AF0C00F17CD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E3010CC1FD57E8600B92997 /* Demo */,
 				2E0D49F81FD3C6C400F17CD9 /* 我的 */,
 				2E0D49F61FD3C62300F17CD9 /* BaseModel.h */,
 				2E0D49F51FD3C62300F17CD9 /* BaseModel.m */,
@@ -243,6 +254,10 @@
 		2E0D49C31FD3C42000F17CD9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2E3010CA1FD57E0F00B92997 /* NSString+Tools.h */,
+				2E3010C91FD57E0F00B92997 /* NSString+Tools.m */,
+				2E3010C61FD57DCA00B92997 /* NSDictionary+Tools.h */,
+				2E3010C71FD57DCA00B92997 /* NSDictionary+Tools.m */,
 				2E0D49D51FD3C51500F17CD9 /* CatagoryHeader.h */,
 				2E0D49D81FD3C51500F17CD9 /* LabelTextSize.h */,
 				2E0D49E21FD3C51500F17CD9 /* LabelTextSize.m */,
@@ -273,12 +288,9 @@
 		2E0D49C41FD3C43C00F17CD9 /* 网络请求 */ = {
 			isa = PBXGroup;
 			children = (
-				2E0D49C51FD3C43C00F17CD9 /* NewHttpRequest.h */,
-				2E0D49C61FD3C43C00F17CD9 /* NewHttpRequest.m */,
-				2E0D49C71FD3C43C00F17CD9 /* RequestData.h */,
-				2E0D49C81FD3C43C00F17CD9 /* RequestData.m */,
-				2E0D49CB1FD3C43C00F17CD9 /* RequestServer.h */,
-				2E0D49CC1FD3C43C00F17CD9 /* RequestServer.m */,
+				2E3010C51FD5783C00B92997 /* RequestHeader.h */,
+				2E3010C41FD5715C00B92997 /* DemoRequest */,
+				2E3010BA1FD5713900B92997 /* BaseRequest */,
 			);
 			path = "网络请求";
 			sourceTree = "<group>";
@@ -347,6 +359,35 @@
 				2E0D4A231FD415A200F17CD9 /* XYYTableViewCell.m */,
 			);
 			path = BaseTableView;
+			sourceTree = "<group>";
+		};
+		2E3010BA1FD5713900B92997 /* BaseRequest */ = {
+			isa = PBXGroup;
+			children = (
+				2E3010BB1FD5713900B92997 /* NewHttpRequest.h */,
+				2E3010BC1FD5713900B92997 /* NewHttpRequest.m */,
+				2E3010BD1FD5713900B92997 /* RequestData.h */,
+				2E3010BE1FD5713900B92997 /* RequestData.m */,
+				2E3010BF1FD5713900B92997 /* RequestServer.h */,
+				2E3010C01FD5713900B92997 /* RequestServer.m */,
+			);
+			path = BaseRequest;
+			sourceTree = "<group>";
+		};
+		2E3010C41FD5715C00B92997 /* DemoRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DemoRequest;
+			sourceTree = "<group>";
+		};
+		2E3010CC1FD57E8600B92997 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				2E3010CD1FD57EAE00B92997 /* JsonPraiseModel.h */,
+				2E3010CE1FD57EAE00B92997 /* JsonPraiseModel.m */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		A35475D6A8202C31BE018277 /* Pods */ = {
@@ -483,15 +524,17 @@
 			files = (
 				2E0D4A211FD4041900F17CD9 /* XYYTableViewController.m in Sources */,
 				2E0D49ED1FD3C51600F17CD9 /* UIView+Tools.m in Sources */,
+				2E3010CF1FD57EAE00B92997 /* JsonPraiseModel.m in Sources */,
+				2E3010C31FD5713900B92997 /* RequestServer.m in Sources */,
 				2E0D49AB1FD3AE8D00F17CD9 /* main.m in Sources */,
+				2E3010C21FD5713900B92997 /* RequestData.m in Sources */,
 				2E0D49EC1FD3C51600F17CD9 /* UIView+LayerEffects.m in Sources */,
-				2E0D49CE1FD3C43C00F17CD9 /* RequestData.m in Sources */,
 				2E0D49D41FD3C44B00F17CD9 /* SS_NavBarView.m in Sources */,
 				2E0D4A241FD415A200F17CD9 /* XYYTableViewCell.m in Sources */,
 				2E0D49F31FD3C51600F17CD9 /* NSObject+Motis.m in Sources */,
-				2E0D49D01FD3C43C00F17CD9 /* RequestServer.m in Sources */,
 				2E0D49EB1FD3C51600F17CD9 /* UIImage+TIXACategory.m in Sources */,
 				2E0D49FB1FD3C73000F17CD9 /* UserInfoModel.m in Sources */,
+				2E3010CB1FD57E0F00B92997 /* NSString+Tools.m in Sources */,
 				2E0D49EF1FD3C51600F17CD9 /* NSString+filePath.m in Sources */,
 				2E0D49F21FD3C51600F17CD9 /* UIDevice+verson.m in Sources */,
 				2E0D4A111FD3E1A000F17CD9 /* DetailViewController.m in Sources */,
@@ -502,11 +545,12 @@
 				2E0D49F01FD3C51600F17CD9 /* LabelTextSize.m in Sources */,
 				2E0D49BA1FD3B5DE00F17CD9 /* MainViewController.m in Sources */,
 				2E0D4A1A1FD3E6AB00F17CD9 /* ViewController.m in Sources */,
+				2E3010C11FD5713900B92997 /* NewHttpRequest.m in Sources */,
 				2E0D49FE1FD3CB7100F17CD9 /* Utility.m in Sources */,
 				2E0D49EE1FD3C51600F17CD9 /* NSObject+Until.m in Sources */,
 				2E0D4A041FD3D33A00F17CD9 /* UIView+XYYFrame.m in Sources */,
+				2E3010C81FD57DCB00B92997 /* NSDictionary+Tools.m in Sources */,
 				2E0D49F71FD3C62400F17CD9 /* BaseModel.m in Sources */,
-				2E0D49CD1FD3C43C00F17CD9 /* NewHttpRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

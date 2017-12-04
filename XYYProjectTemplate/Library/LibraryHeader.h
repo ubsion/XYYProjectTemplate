@@ -17,8 +17,10 @@
 #import "RegexKitLite.h"
 //SDWebImage
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "RequestHeader.h"
 
 #import "YYText.h"
+#import "YYModel.h"
 #import "MBProgressHUD.h"
 #import "TMCache.h"
 #import "Reachability.h"

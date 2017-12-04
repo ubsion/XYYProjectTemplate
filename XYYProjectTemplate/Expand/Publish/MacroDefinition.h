@@ -12,26 +12,26 @@
 #endif
 
 
-#define   TEST_VERSION              //外网| 不注释 内网
+//#define   TEST_VERSION              //外网| 不注释 内网
 //#define   APPSTORE_VERSION     //注释 外网| 不注释 appstore
 
 /*********服务器配置Bengin************/
 #ifdef    TEST_VERSION
 
-    #define   FILE_URL              @"http://192.168.100.58:8082/v1/file/"
-    #define   SERVER_URL            @"http://192.168.100.58:8082/v1/"
+    #define   FILE_URL                   @"http://192.168.100.58:8082/v1/file/"
+    #define   SERVER_URL                 @"http://192.168.100.58:8082/v1/"
 
 #else
 
     #ifdef    APPSTORE_VERSION
 
-        #define   FILE_URL              @"https://www.zhanglv.mobi/v1/file/"
-        #define   SERVER_URL            @"https://www.zhanglv.mobi/v1"
+        #define   FILE_URL               @"https://www.zhanglv.mobi/v1/file/"
+        #define   SERVER_URL             @"https://www.zhanglv.mobi/v1"
 
     #else
 
-        #define   FILE_URL              @"http://test.91lvdou.com/v1/file/"
-        #define   SERVER_URL            @"http://test.91lvdou.com/v1"
+        #define   FILE_URL               @"http://test.91lvdou.com/v1/file/"
+        #define   SERVER_URL             @"http://test.91lvdou.com/v1"
 
     #endif
 

@@ -11,4 +11,6 @@
 
 @interface BaseModel : NSObject<NSCoding>
 
+@property (nonatomic,assign) UInt64 id;
+
 @end

@@ -95,4 +95,28 @@
  */
 +(NSString *)getHeaderNameWithGender:(NSInteger)gender isLawyer:(BOOL)isLawyer;
 
+
+/**
+ 提示框
+
+ @param tip
+ */
++ (void)showTip:(NSString *)tip;
+
+/**
+ 自定义时间提示框
+
+ @param tip
+ @param second
+ */
++ (void)showTip:(NSString *)tip atTime:(NSInteger)second;
+
+/**
+ Alert 提示
+
+ @param msg
+ */
++ (void)showAlert:(NSString *)msg;
+
+
 @end

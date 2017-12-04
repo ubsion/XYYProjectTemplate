@@ -25,22 +25,11 @@ typedef void (^AFFailureBlock)(NSURLSessionDataTask *task, NSError *error);
 @interface NewHttpRequest : NSObject
 
 + (void)cancelOperation;
-/**
- *  @author 王志, 15-05-26 13:05:26
- *
- *  @brief  网络基本请求
- *
- *  @param domainPath    完整的请求url
- *  @param requestMethod 请求方式
- *  @param parameters    参数
- *  @param finish        完成block
- *  @param failure       失败block
- */
+
 + (void)requestPath:(NSString *)domainPath
       requestMethod:(SZRequestMethod)requestMethod
          parameters:(NSDictionary *)parameters
              finish:(AFFinishBlock)finish
             failure:(AFFailureBlock)failure;
-
 
 @end

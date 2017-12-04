@@ -9,6 +9,8 @@
 #import "Utility.h"
 #import "TMCache.h"
 #import "NSDate+TIXACategory.h"
+#import "LabelTextSize.h"
+
 
 static UIImageView *orginImageView;
 
@@ -478,5 +480,125 @@ NSString *const notificationName = @"notificationTimeStamp";
     }
     return @"";
 }
+
+//弹出提示框
++ (void)showTip:(NSString *)tip
+{
+    if ([tip.stringByTrim isEqualToString:@""]) {
+        //如果tip是空的话，不显示
+        return;
+    }
+    
+    CGSize size = [LabelTextSize getSuitSizeWithString:tip fontSize:14 bold:false sizeOfX:SCREEN_WIDTH - 40];
+    if(size.height < 30)
+        size.height = 30;
+    else
+        size.height+= 10;
+    if(size.height < SCREEN_WIDTH - 60)
+        size.height+= 20;
+    
+    UILabel *mainTipLabel = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - size.width - 20)/2, (SCREEN_HEIGHT - size.height)/2, size.width + 20, size.height)];
+    mainTipLabel.font = [UIFont boldSystemFontOfSize:14.0f];
+    mainTipLabel.text = tip;
+    mainTipLabel.numberOfLines = 0;
+    mainTipLabel.alpha = 0;
+    mainTipLabel.layer.cornerRadius = 5;
+    mainTipLabel.layer.masksToBounds = true;
+    mainTipLabel.textAlignment = NSTextAlignmentCenter;
+    mainTipLabel.backgroundColor = [UIColor blackColor];
+    mainTipLabel.textColor = [UIColor whiteColor];
+    
+    NSInteger count = [[UIApplication sharedApplication] windows].count;
+    
+    if ([[UIDevice currentDevice] systemVersion].floatValue >= 11) {
+        [[UIApplication sharedApplication].windows.firstObject addSubview:mainTipLabel];
+    }else
+    {
+        //IOS11下面
+        [[UIApplication sharedApplication].windows[count-1] addSubview:mainTipLabel];
+    }
+    
+    
+    
+    [UIView animateWithDuration:1 animations:^{
+        
+        mainTipLabel.alpha = 1;
+        
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:1 animations:^{
+            
+            mainTipLabel.alpha = 0;
+            
+        } completion:^(BOOL finished) {
+            
+            [mainTipLabel removeFromSuperview];
+            
+        }];
+        
+    }];
+}
+
+
+//弹出提示框
++ (void)showTip:(NSString *)tip atTime:(NSInteger)second
+{
+    if ([tip.stringByTrim isEqualToString:@""]) {
+        //如果tip是空的话，不显示
+        return;
+    }
+    
+    CGSize size = [LabelTextSize getSuitSizeWithString:tip fontSize:14 bold:false sizeOfX:SCREEN_WIDTH - 40];
+    if(size.height < 30)
+        size.height = 30;
+    else
+        size.height+= 10;
+    if(size.height < SCREEN_WIDTH - 60)
+        size.height+= 20;
+    
+    UILabel *mainTipLabel = [[UILabel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - size.width - 20)/2, (SCREEN_HEIGHT - size.height)/2, size.width + 20, size.height)];
+    mainTipLabel.font = [UIFont boldSystemFontOfSize:14.0f];
+    mainTipLabel.text = tip;
+    mainTipLabel.numberOfLines = 0;
+    mainTipLabel.alpha = 0;
+    mainTipLabel.layer.cornerRadius = 5;
+    mainTipLabel.layer.masksToBounds = true;
+    mainTipLabel.textAlignment = NSTextAlignmentCenter;
+    mainTipLabel.backgroundColor = [UIColor blackColor];
+    mainTipLabel.textColor = [UIColor whiteColor];
+    
+    NSInteger count = [[UIApplication sharedApplication] windows].count;
+    
+    [[UIApplication sharedApplication].windows[count-1] addSubview:mainTipLabel];
+    
+    
+    [UIView animateWithDuration:1 animations:^{
+        
+        mainTipLabel.alpha = 1;
+        
+    } completion:^(BOOL finished) {
+        
+        [UIView animateWithDuration:1 delay:second options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            mainTipLabel.alpha = 0;
+            
+        } completion:^(BOOL finished) {
+            [mainTipLabel removeFromSuperview];
+        }];
+        
+    }];
+}
+
+
++ (void)showAlert:(NSString *)msg
+{
+    UIAlertView *staticAlert = [[UIAlertView alloc] initWithTitle:@"提示"
+                                                          message:msg
+                                                         delegate:nil
+                                                cancelButtonTitle:@"我知道了"
+                                                otherButtonTitles:nil, nil];
+    staticAlert.delegate = [self class];
+    [staticAlert show];
+}
+
 
 @end

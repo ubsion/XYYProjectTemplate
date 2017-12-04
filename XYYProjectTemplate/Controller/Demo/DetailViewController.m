@@ -28,19 +28,47 @@
 -(void)onHeaderWithRefreshing
 {
     __weak typeof(self) weakSelf = self;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        //丢进后台处理的东西
-        NSMutableArray *middleArray = [[NSMutableArray alloc] init];
-        for (int i = 0; i < 100; i++) {
-            [middleArray addObject:[NSString stringWithFormat:@"arr - %d",i]];
-        }
-        weakSelf.dataArray = [middleArray mutableCopy];
+    [RequestServer requestGetMethod:9
+                           sortType:1
+                             lawTag:@""
+                           pageTime:@""
+                            pageNum:1
+                           pageSize:perPageSize
+                            success:^(NSDictionary *dic, NSString *tipInfo) {
+                                
+                                NSLog(@"当前数据是- %@",dic);
+                                
+                                //丢进后台处理的东西
+                                NSMutableArray *middleArray = [[NSMutableArray alloc] init];
+                                for (int i = 0; i < 100; i++) {
+                                    [middleArray addObject:[NSString stringWithFormat:@"arr - %d",i]];
+                                }
+                                weakSelf.dataArray = [middleArray mutableCopy];
+                        
+                                
+                                //UI刷新放入主线程中
+                                [weakSelf reloadXYYTableViewHideFooter:NO];
+                            
+    } error:^(NSString *errorInfo) {
+        //UI刷新放入主线程中
+        [weakSelf reloadXYYTableViewHideFooter:NO];
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            //UI刷新放入主线程中
-            [weakSelf reloadXYYTableViewHideFooter:NO];
-        });
-    });
+    }];
+    
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        //丢进后台处理的东西
+//        NSMutableArray *middleArray = [[NSMutableArray alloc] init];
+//        for (int i = 0; i < 100; i++) {
+//            [middleArray addObject:[NSString stringWithFormat:@"arr - %d",i]];
+//        }
+//        weakSelf.dataArray = [middleArray mutableCopy];
+//
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            //UI刷新放入主线程中
+//            [weakSelf reloadXYYTableViewHideFooter:NO];
+//        });
+//    });
 }
 
 -(void)onFooterWithRefreshing

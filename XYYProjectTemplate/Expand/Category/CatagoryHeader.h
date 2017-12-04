@@ -25,6 +25,7 @@
 //#import "ABADIYHeader.h"
 #import "NSString+filePath.h"
 #import "UIView+XYYFrame.h"
-
+#import "NSDictionary+Tools.h"
+#import "NSString+Tools.h"
 
 #endif /* CatagoryHeader_h */
