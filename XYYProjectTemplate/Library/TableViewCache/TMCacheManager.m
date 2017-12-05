@@ -10,6 +10,7 @@
 #import "TMCache.h"
 
 @implementation TMCacheManager
+
 /**
  同步缓存数组
  
@@ -31,7 +32,6 @@
     NSArray *returnArray = [[TMCache sharedCache] objectForKey:key];
     return returnArray;
 }
-
 
 /**
  异步缓存数组
@@ -78,7 +78,6 @@
 {
     [[TMCache sharedCache] setObject:dic forKey:key];
 }
-
 
 /**
  同步读取Dictionary
@@ -161,7 +160,5 @@
 {
     [[TMCache sharedCache] removeObjectForKey:key];
 }
-
-
 
 @end
