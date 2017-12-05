@@ -20,7 +20,6 @@
 
 + (BOOL)checkInterfaceDataCode:(NSDictionary *)dic
 {
-    NSLog(@"response-->%@",dic);
     NSInteger code = [dic[@"code"] integerValue];
     if (code==1000) {
         return YES;
@@ -91,7 +90,6 @@
                                    };
              NSString *jsonStr = [NSDictionary jsonStringWithdictionary:dic];
              JsonPraiseModel *model = [JsonPraiseModel yy_modelWithJSON:jsonStr];
-             
              DLog(@"%@",model.createdStr);
              
              

@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "JsonPraiseModel.h"
 
 @interface DetailViewController ()
 
@@ -27,6 +28,7 @@
 
 -(void)onHeaderWithRefreshing
 {
+    //网络层访问
     __weak typeof(self) weakSelf = self;
     [RequestServer requestGetMethod:9
                            sortType:1
@@ -35,40 +37,31 @@
                             pageNum:1
                            pageSize:perPageSize
                             success:^(NSDictionary *dic, NSString *tipInfo) {
-                                
-                                NSLog(@"当前数据是- %@",dic);
-                                
+
+//                                NSLog(@"当前数据是- %@",dic);
+
                                 //丢进后台处理的东西
                                 NSMutableArray *middleArray = [[NSMutableArray alloc] init];
                                 for (int i = 0; i < 100; i++) {
                                     [middleArray addObject:[NSString stringWithFormat:@"arr - %d",i]];
                                 }
                                 weakSelf.dataArray = [middleArray mutableCopy];
-                        
-                                
+
+
                                 //UI刷新放入主线程中
                                 [weakSelf reloadXYYTableViewHideFooter:NO];
-                            
+
     } error:^(NSString *errorInfo) {
         //UI刷新放入主线程中
         [weakSelf reloadXYYTableViewHideFooter:NO];
-        
+
     }];
     
     
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        //丢进后台处理的东西
-//        NSMutableArray *middleArray = [[NSMutableArray alloc] init];
-//        for (int i = 0; i < 100; i++) {
-//            [middleArray addObject:[NSString stringWithFormat:@"arr - %d",i]];
-//        }
-//        weakSelf.dataArray = [middleArray mutableCopy];
-//
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            //UI刷新放入主线程中
-//            [weakSelf reloadXYYTableViewHideFooter:NO];
-//        });
-//    });
+    //模拟缓存数据
+    [self cacaheDemo];
+    
+    
 }
 
 -(void)onFooterWithRefreshing
@@ -121,6 +114,73 @@
     
 }
 
+
+#pragma mark - ******* 缓存Demo *********
+-(void)cacaheDemo
+{
+    //自己创建json数据
+    NSDictionary *dic = @{@"anyThing":@"汇总所有的"
+                          ,@"created":@(1512395183)
+                          ,@"list":@[@{@"nickName":@"张三"
+                                       ,@"age":@(20)
+                                       ,@"uId":@(108)
+                                       }
+                                     ,@{@"nickName":@"张三"
+                                        ,@"age":@(20)
+                                        ,@"uId":@(108)
+                                        }
+                                     ,@{@"nickName":@"张三"
+                                        ,@"age":@(20)
+                                        ,@"uId":@(108)
+                                        
+                                        }]
+                          ,@"user":@{@"nickName":@"张三"
+                                     ,@"age":@(20)
+                                     ,@"uId":@(108)
+                                     }
+                          };
+    NSString *jsonStr = [NSDictionary jsonStringWithdictionary:dic];
+    JsonPraiseModel *model = [JsonPraiseModel yy_modelWithJSON:jsonStr];
+    DLog(@"%@",model.createdStr);
+    
+    //模拟数据
+    
+    NSMutableArray *middleArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 100; i++) {
+        [middleArray addObject:model];
+    }
+    
+    
+    NSLog(@"-----------异步--------------");
+    NSString *key2 = @"key2";
+    
+    [TMCacheManager removeCacheForKey:key2];
+    
+    [TMCacheManager removeAllCache];
+
+    BOOL isExitst2 = [TMCacheManager isCacheExistKey:key2];
+    if (!isExitst2) {
+//        [TMCacheManager saveAsynArrayCache:middleArray key:key2];
+//        [TMCacheManager saveArrayCache:middleArray key:key2];
+    }
+    [TMCacheManager arrayAsynCacheForKey:key2 cacheArrayBlock:^(NSArray *array) {
+        NSLog(@"TmCache异步 -object nums-%lu",(unsigned long)array.count);
+    }];
+    
+    NSLog(@"-----------同步--------------");
+    BOOL isExist = [TMCacheManager isCacheExistKey:@"key"];
+    if (!isExist) {
+//        [TMCacheManager saveArrayCache:middleArray key:@"key"];
+    }
+    
+    NSArray *result = [TMCacheManager arrayCacheForKey:@"key"];
+    NSLog(@"TmCache同步 -object nums - %lu",(unsigned long)result.count);
+    
+    
+    
+    
+    
+}
 
 /*
 #pragma mark - Navigation

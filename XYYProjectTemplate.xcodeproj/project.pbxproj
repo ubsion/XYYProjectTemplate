@@ -40,6 +40,8 @@
 		2E3010C81FD57DCB00B92997 /* NSDictionary+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010C71FD57DCA00B92997 /* NSDictionary+Tools.m */; };
 		2E3010CB1FD57E0F00B92997 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010C91FD57E0F00B92997 /* NSString+Tools.m */; };
 		2E3010CF1FD57EAE00B92997 /* JsonPraiseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010CE1FD57EAE00B92997 /* JsonPraiseModel.m */; };
+		2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */; };
+		2EC756F71FD6C99000EFC3EC /* TMCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756F21FD6C99000EFC3EC /* TMCacheManager.m */; };
 		4232C234C7228CD4234E600B /* libPods-XYYProjectTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1623E659BD3D67BC11E3C0D9 /* libPods-XYYProjectTemplate.a */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,10 @@
 		2E3010CA1FD57E0F00B92997 /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
 		2E3010CD1FD57EAE00B92997 /* JsonPraiseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonPraiseModel.h; sourceTree = "<group>"; };
 		2E3010CE1FD57EAE00B92997 /* JsonPraiseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonPraiseModel.m; sourceTree = "<group>"; };
+		2EC756E71FD6C99000EFC3EC /* TableViewCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCacheHeight.h; sourceTree = "<group>"; };
+		2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCacheHeight.m; sourceTree = "<group>"; };
+		2EC756F11FD6C99000EFC3EC /* TMCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCacheManager.h; sourceTree = "<group>"; };
+		2EC756F21FD6C99000EFC3EC /* TMCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCacheManager.m; sourceTree = "<group>"; };
 		B508EBE6803EABAD63ECCCBC /* Pods-XYYProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYYProjectTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYYProjectTemplate/Pods-XYYProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +234,7 @@
 		2E0D49B61FD3B50E00F17CD9 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				2EC756E61FD6C99000EFC3EC /* TableViewCache */,
 				2E0D49F41FD3C53A00F17CD9 /* LibraryHeader.h */,
 			);
 			path = Library;
@@ -390,6 +397,17 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		2EC756E61FD6C99000EFC3EC /* TableViewCache */ = {
+			isa = PBXGroup;
+			children = (
+				2EC756E71FD6C99000EFC3EC /* TableViewCacheHeight.h */,
+				2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */,
+				2EC756F11FD6C99000EFC3EC /* TMCacheManager.h */,
+				2EC756F21FD6C99000EFC3EC /* TMCacheManager.m */,
+			);
+			path = TableViewCache;
+			sourceTree = "<group>";
+		};
 		A35475D6A8202C31BE018277 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,6 +547,8 @@
 				2E0D49AB1FD3AE8D00F17CD9 /* main.m in Sources */,
 				2E3010C21FD5713900B92997 /* RequestData.m in Sources */,
 				2E0D49EC1FD3C51600F17CD9 /* UIView+LayerEffects.m in Sources */,
+				2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */,
+				2EC756F71FD6C99000EFC3EC /* TMCacheManager.m in Sources */,
 				2E0D49D41FD3C44B00F17CD9 /* SS_NavBarView.m in Sources */,
 				2E0D4A241FD415A200F17CD9 /* XYYTableViewCell.m in Sources */,
 				2E0D49F31FD3C51600F17CD9 /* NSObject+Motis.m in Sources */,

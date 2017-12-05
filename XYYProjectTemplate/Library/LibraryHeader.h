@@ -22,7 +22,8 @@
 #import "YYText.h"
 #import "YYModel.h"
 #import "MBProgressHUD.h"
-#import "TMCache.h"
+//#import "TMCache.h"
+#import "TMCacheManager.h"
 #import "Reachability.h"
 
 
