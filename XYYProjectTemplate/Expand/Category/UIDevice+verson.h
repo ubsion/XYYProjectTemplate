@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UIDevice (verson)
+
 + (float)getIOSVersion;
+
++(CGSize)getScreenScale;
+
 @end

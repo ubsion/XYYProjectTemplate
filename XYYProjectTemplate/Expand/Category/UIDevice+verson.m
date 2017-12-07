@@ -13,4 +13,15 @@
 {
     return [[[UIDevice currentDevice] systemVersion] floatValue];
 }
+
++(CGSize)getScreenScale
+{
+    CGRect rect_screen = [[UIScreen mainScreen]bounds];
+    CGSize size_screen = rect_screen.size;
+    CGFloat scale_screen = [UIScreen mainScreen].scale;
+    CGFloat screenWidth = size_screen.width*scale_screen;
+    CGFloat screenHeight = size_screen.height*scale_screen;
+    return CGSizeMake(screenWidth, screenHeight);
+}
+
 @end

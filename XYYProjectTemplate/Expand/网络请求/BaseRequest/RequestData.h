@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UserInfoModel.h"
-//#import "PlaceModel.h"
+#import "PlaceModel.h"
 
 @interface RequestData : NSObject
 
@@ -41,8 +41,8 @@
 //+(void)setMsgConfigArray:(NSArray *)tagArray;
 //+(NSArray *)getMsgConfigArray;
 
-///定位地址
-//+ (void)setPlaceModel:(PlaceModel *)place;
-//+ (PlaceModel *)getPlaceModel;
+//定位地址
++ (void)setPlaceModel:(PlaceModel *)place;
++ (PlaceModel *)getPlaceModel;
 
 @end

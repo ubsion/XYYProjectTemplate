@@ -40,6 +40,9 @@
 		2E3010C81FD57DCB00B92997 /* NSDictionary+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010C71FD57DCA00B92997 /* NSDictionary+Tools.m */; };
 		2E3010CB1FD57E0F00B92997 /* NSString+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010C91FD57E0F00B92997 /* NSString+Tools.m */; };
 		2E3010CF1FD57EAE00B92997 /* JsonPraiseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3010CE1FD57EAE00B92997 /* JsonPraiseModel.m */; };
+		2E3E183A1FD80EDA009D42C2 /* LocationManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E18391FD80EDA009D42C2 /* LocationManger.m */; };
+		2E3E183C1FD80FA9009D42C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3E183B1FD80F9E009D42C2 /* CoreLocation.framework */; };
+		2E3E183F1FD81068009D42C2 /* PlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E183E1FD81068009D42C2 /* PlaceModel.m */; };
 		2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */; };
 		2EC756F71FD6C99000EFC3EC /* TMCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756F21FD6C99000EFC3EC /* TMCacheManager.m */; };
 		4232C234C7228CD4234E600B /* libPods-XYYProjectTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1623E659BD3D67BC11E3C0D9 /* libPods-XYYProjectTemplate.a */; };
@@ -116,6 +119,11 @@
 		2E3010CA1FD57E0F00B92997 /* NSString+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tools.h"; sourceTree = "<group>"; };
 		2E3010CD1FD57EAE00B92997 /* JsonPraiseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonPraiseModel.h; sourceTree = "<group>"; };
 		2E3010CE1FD57EAE00B92997 /* JsonPraiseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonPraiseModel.m; sourceTree = "<group>"; };
+		2E3E18381FD80EDA009D42C2 /* LocationManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManger.h; sourceTree = "<group>"; };
+		2E3E18391FD80EDA009D42C2 /* LocationManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManger.m; sourceTree = "<group>"; };
+		2E3E183B1FD80F9E009D42C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2E3E183D1FD81067009D42C2 /* PlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceModel.h; sourceTree = "<group>"; };
+		2E3E183E1FD81068009D42C2 /* PlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceModel.m; sourceTree = "<group>"; };
 		2EC756E71FD6C99000EFC3EC /* TableViewCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCacheHeight.h; sourceTree = "<group>"; };
 		2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCacheHeight.m; sourceTree = "<group>"; };
 		2EC756F11FD6C99000EFC3EC /* TMCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCacheManager.h; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E3E183C1FD80FA9009D42C2 /* CoreLocation.framework in Frameworks */,
 				4232C234C7228CD4234E600B /* libPods-XYYProjectTemplate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +147,7 @@
 		1432D9EA595F0E7875BED4DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E3E183B1FD80F9E009D42C2 /* CoreLocation.framework */,
 				1623E659BD3D67BC11E3C0D9 /* libPods-XYYProjectTemplate.a */,
 			);
 			name = Frameworks;
@@ -314,6 +324,8 @@
 		2E0D49F81FD3C6C400F17CD9 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				2E3E183D1FD81067009D42C2 /* PlaceModel.h */,
+				2E3E183E1FD81068009D42C2 /* PlaceModel.m */,
 				2E0D49F91FD3C73000F17CD9 /* UserInfoModel.h */,
 				2E0D49FA1FD3C73000F17CD9 /* UserInfoModel.m */,
 			);
@@ -325,6 +337,8 @@
 			children = (
 				2E0D4A0B1FD3DD0C00F17CD9 /* NetworkReachability.h */,
 				2E0D4A0C1FD3DD0C00F17CD9 /* NetworkReachability.m */,
+				2E3E18381FD80EDA009D42C2 /* LocationManger.h */,
+				2E3E18391FD80EDA009D42C2 /* LocationManger.m */,
 			);
 			path = AppDelegateExtension;
 			sourceTree = "<group>";
@@ -550,6 +564,7 @@
 				2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */,
 				2EC756F71FD6C99000EFC3EC /* TMCacheManager.m in Sources */,
 				2E0D49D41FD3C44B00F17CD9 /* SS_NavBarView.m in Sources */,
+				2E3E183F1FD81068009D42C2 /* PlaceModel.m in Sources */,
 				2E0D4A241FD415A200F17CD9 /* XYYTableViewCell.m in Sources */,
 				2E0D49F31FD3C51600F17CD9 /* NSObject+Motis.m in Sources */,
 				2E0D49EB1FD3C51600F17CD9 /* UIImage+TIXACategory.m in Sources */,
@@ -570,6 +585,7 @@
 				2E0D49EE1FD3C51600F17CD9 /* NSObject+Until.m in Sources */,
 				2E0D4A041FD3D33A00F17CD9 /* UIView+XYYFrame.m in Sources */,
 				2E3010C81FD57DCB00B92997 /* NSDictionary+Tools.m in Sources */,
+				2E3E183A1FD80EDA009D42C2 /* LocationManger.m in Sources */,
 				2E0D49F71FD3C62400F17CD9 /* BaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

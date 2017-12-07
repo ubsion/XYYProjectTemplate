@@ -27,5 +27,6 @@
 #import "UIView+XYYFrame.h"
 #import "NSDictionary+Tools.h"
 #import "NSString+Tools.h"
+#import "UIDevice+verson.h"
 
 #endif /* CatagoryHeader_h */

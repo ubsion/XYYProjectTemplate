@@ -19,7 +19,7 @@ static UserInfoModel    *userInfoModel;
 //static NSArray          *contentTagArray;
 //static NSArray          *lawyerTagArray;
 ///地址
-//static PlaceModel       *placeModel;
+static PlaceModel       *placeModel;
 
 static NSArray          *msgConfigArray;
 
@@ -124,16 +124,16 @@ static NSArray          *msgConfigArray;
 //}
 
 
-/////定位地址
-//+ (void )setPlaceModel:(PlaceModel *)place
-//{
-//    placeModel = place;
-//}
-//
-//+ (PlaceModel *)getPlaceModel
-//{
-//    return placeModel;
-//}
+///定位地址
++ (void )setPlaceModel:(PlaceModel *)place
+{
+    placeModel = place;
+}
+
++ (PlaceModel *)getPlaceModel
+{
+    return placeModel;
+}
 
 
 
