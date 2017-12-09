@@ -68,6 +68,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     //自己调用自己
     
+}
+
+-(void)viewDidLayoutSubviews
+{
     [self setNavBarViewBar];
 }
 

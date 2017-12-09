@@ -28,5 +28,6 @@
 #import "NSDictionary+Tools.h"
 #import "NSString+Tools.h"
 #import "UIDevice+verson.h"
+#import "UIView+CustomAutoLayout.h"
 
 #endif /* CatagoryHeader_h */

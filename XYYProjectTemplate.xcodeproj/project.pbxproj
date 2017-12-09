@@ -45,6 +45,8 @@
 		2E3E183F1FD81068009D42C2 /* PlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E183E1FD81068009D42C2 /* PlaceModel.m */; };
 		2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */; };
 		2EC756F71FD6C99000EFC3EC /* TMCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756F21FD6C99000EFC3EC /* TMCacheManager.m */; };
+		2ED8F3031FDB77AB00BF0C47 /* UIView+CustomAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8F3021FDB77AA00BF0C47 /* UIView+CustomAutoLayout.m */; };
+		2ED8F3061FDB781200BF0C47 /* CustomLayoutDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8F3051FDB781200BF0C47 /* CustomLayoutDemo.m */; };
 		4232C234C7228CD4234E600B /* libPods-XYYProjectTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1623E659BD3D67BC11E3C0D9 /* libPods-XYYProjectTemplate.a */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +130,10 @@
 		2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCacheHeight.m; sourceTree = "<group>"; };
 		2EC756F11FD6C99000EFC3EC /* TMCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCacheManager.h; sourceTree = "<group>"; };
 		2EC756F21FD6C99000EFC3EC /* TMCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCacheManager.m; sourceTree = "<group>"; };
+		2ED8F3011FDB77AA00BF0C47 /* UIView+CustomAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomAutoLayout.h"; sourceTree = "<group>"; };
+		2ED8F3021FDB77AA00BF0C47 /* UIView+CustomAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomAutoLayout.m"; sourceTree = "<group>"; };
+		2ED8F3041FDB781200BF0C47 /* CustomLayoutDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayoutDemo.h; sourceTree = "<group>"; };
+		2ED8F3051FDB781200BF0C47 /* CustomLayoutDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayoutDemo.m; sourceTree = "<group>"; };
 		B508EBE6803EABAD63ECCCBC /* Pods-XYYProjectTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYYProjectTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYYProjectTemplate/Pods-XYYProjectTemplate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,6 +277,8 @@
 		2E0D49C31FD3C42000F17CD9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2ED8F3011FDB77AA00BF0C47 /* UIView+CustomAutoLayout.h */,
+				2ED8F3021FDB77AA00BF0C47 /* UIView+CustomAutoLayout.m */,
 				2E3010CA1FD57E0F00B92997 /* NSString+Tools.h */,
 				2E3010C91FD57E0F00B92997 /* NSString+Tools.m */,
 				2E3010C61FD57DCA00B92997 /* NSDictionary+Tools.h */,
@@ -348,6 +356,8 @@
 			children = (
 				2E0D4A0F1FD3E1A000F17CD9 /* DetailViewController.h */,
 				2E0D4A101FD3E1A000F17CD9 /* DetailViewController.m */,
+				2ED8F3041FDB781200BF0C47 /* CustomLayoutDemo.h */,
+				2ED8F3051FDB781200BF0C47 /* CustomLayoutDemo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -556,6 +566,7 @@
 			files = (
 				2E0D4A211FD4041900F17CD9 /* XYYTableViewController.m in Sources */,
 				2E0D49ED1FD3C51600F17CD9 /* UIView+Tools.m in Sources */,
+				2ED8F3031FDB77AB00BF0C47 /* UIView+CustomAutoLayout.m in Sources */,
 				2E3010CF1FD57EAE00B92997 /* JsonPraiseModel.m in Sources */,
 				2E3010C31FD5713900B92997 /* RequestServer.m in Sources */,
 				2E0D49AB1FD3AE8D00F17CD9 /* main.m in Sources */,
@@ -579,6 +590,7 @@
 				2E0D49EA1FD3C51600F17CD9 /* UIColor+YYAdd.m in Sources */,
 				2E0D49F01FD3C51600F17CD9 /* LabelTextSize.m in Sources */,
 				2E0D49BA1FD3B5DE00F17CD9 /* MainViewController.m in Sources */,
+				2ED8F3061FDB781200BF0C47 /* CustomLayoutDemo.m in Sources */,
 				2E0D4A1A1FD3E6AB00F17CD9 /* ViewController.m in Sources */,
 				2E3010C11FD5713900B92997 /* NewHttpRequest.m in Sources */,
 				2E0D49FE1FD3CB7100F17CD9 /* Utility.m in Sources */,

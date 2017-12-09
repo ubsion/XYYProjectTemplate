@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "JsonPraiseModel.h"
 
+
 @interface DetailViewController ()
 
 @end
@@ -176,11 +177,10 @@
     NSArray *result = [TMCacheManager arrayCacheForKey:@"key"];
     NSLog(@"TmCache同步 -object nums - %lu",(unsigned long)result.count);
     
-    
-    
-    
-    
 }
+
+
+
 
 /*
 #pragma mark - Navigation

@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "DetailViewController.h"
+#import "CustomLayoutDemo.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -77,9 +78,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    DetailViewController *detail = [[DetailViewController alloc] init];
-    detail.title = [NSString stringWithFormat:@"title is num_%ld",(long)indexPath.row];
-    [self.navigationController pushViewController:detail animated:YES];
+    if (indexPath.row == 0) {
+        CustomLayoutDemo *layoutDemo = [CustomLayoutDemo new];
+        [self.navigationController pushViewController:layoutDemo animated:YES];
+    }else{
+        DetailViewController *detail = [[DetailViewController alloc] init];
+        detail.title = [NSString stringWithFormat:@"title is num_%ld",(long)indexPath.row];
+        [self.navigationController pushViewController:detail animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
