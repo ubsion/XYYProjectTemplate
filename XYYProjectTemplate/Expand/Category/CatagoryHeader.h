@@ -24,11 +24,15 @@
 #import "NSDate+TIXACategory.h"
 //#import "ABADIYHeader.h"
 #import "NSString+filePath.h"
-#import "UIView+XYYFrame.h"
+
+#import "YYLabel+Tool.h"
+#import "UIView+YYAdd.h"
+#import "UIView+YYViewLayout.h"
+#import "YYLayoutModel.h"
+
 #import "NSDictionary+Tools.h"
 #import "NSString+Tools.h"
 #import "UIDevice+verson.h"
 #import "UIView+CustomAutoLayout.h"
-#import "YYLabel+Tool.h"
 
 #endif /* CatagoryHeader_h */

@@ -17,6 +17,7 @@
 @property (nonatomic,strong) UIView *redView;
 
 @property (nonatomic,strong) YYLabel *conentLabel;
+@property (nonatomic,strong) YYLayoutModel *contentTextLayoutModel;
 
 @end
 
@@ -39,27 +40,38 @@
     _blackView.layer.borderColor = [UIColor blackColor].CGColor;
     [self.view addSubview:_blackView];
     
-    _yellowView = [UIView new];
-    _yellowView.backgroundColor = [UIColor yellowColor];
-    [_blackView addSubview:_yellowView];
+//    _yellowView = [UIView new];
+//    _yellowView.backgroundColor = [UIColor yellowColor];
+//    [_blackView addSubview:_yellowView];
+//
+//    _redView = [UIView new];
+//    _redView.backgroundColor = [UIColor redColor];
+//    [_blackView addSubview:_redView];
     
-    _redView = [UIView new];
-    _redView.backgroundColor = [UIColor redColor];
-    [_blackView addSubview:_redView];
+//    _conentLabel = [YYLabel new];
+//    _conentLabel.backgroundColor = [UIColor blackColor];
+//    _conentLabel.font = [UIFont systemFontOfSize:15];
+//    _conentLabel.lineBreakMode = NSLineBreakByCharWrapping;
+//    _conentLabel.textColor = [UIColor lightGrayColor];
+//    _conentLabel.numberOfLines = 0;
+//    _conentLabel.preferredMaxLayoutWidth = SCREEN_WIDTH - 20;
+//    _conentLabel.text = @"当我们在某个类的内部调整子视图位置时，需要调用。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。)反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。~~~~~这个是结尾哦，那个高度好像不对.I means that you are my best friend,and I need you pershare with us , we can't deal with it without you,please.";
+//    [_blackView addSubview:_conentLabel];
     
     _conentLabel = [YYLabel new];
     _conentLabel.backgroundColor = [UIColor blackColor];
-    _conentLabel.font = [UIFont systemFontOfSize:15];
-    _conentLabel.lineBreakMode = NSLineBreakByCharWrapping;
-    _conentLabel.textColor = [UIColor lightGrayColor];
-    _conentLabel.numberOfLines = 0;
-    _conentLabel.preferredMaxLayoutWidth = SCREEN_WIDTH - 20;
-    _conentLabel.text = @"当我们在某个类的内部调整子视图位置时，需要调用。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。)反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。~~~~~这个是结尾哦，那个高度好像不对.I means that you are my best friend,and I need you pershare with us , we can't deal with it without you,please.";
+    _conentLabel.displaysAsynchronously = YES;
     [_blackView addSubview:_conentLabel];
-    
-    
-    
+    NSString *string = @"当我们在某个类的内部调整子视图位置时，需要调用。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。)反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。反过来的意思就是说：如果你想要在外部设置的位置，就不要重写。~~~~~这个是结尾哦，那个高度好像不对.I means that you are my best friend,and I need you pershare with us , we can't deal with it without you,please.";
+    _contentTextLayoutModel = [UIView layoutYYTextLabelLayout:string
+                                 preferredMaxLayoutWidth:(SCREEN_WIDTH -20)
+                                           textAlignment:NSTextAlignmentLeft
+                                           lineBreakMode:NSLineBreakByCharWrapping
+                                                fontSize:16
+                                               textColor:[UIColor lightGrayColor]];
 }
+
+
 
 -(void)viewDidLayoutSubviews
 {
@@ -81,22 +93,33 @@
 //    rect = CGRectInset(rect, 0, 0);
 //    [_blackView alignSubviews:@[_redView,_yellowView] horizontallyWithPadding:10 margin:10 inRect:rect];
 
-    //3.
+    //3.YYLabel初步使用
+//    [_blackView sizeWith:CGSizeMake(SCREEN_WIDTH, 400)];
+//    [_blackView alignParentTopWithMargin:kTopHeight + 44];
+//    [_blackView alignParentLeftWithMargin:0];
+//
+//    [_redView sizeWith:CGSizeMake(44, 44)];
+//    [_redView alignParentTopWithMargin:10];
+//    [_redView alignParentLeftWithMargin:10];
+//
+//    [_yellowView sizeWith:CGSizeMake(44, 44)];
+//    [_yellowView layoutToRightOf:_redView margin:10];
+//    [_yellowView alignVerticalCenterOf:_redView];
+//
+//    [_conentLabel sizeWith:CGSizeMake(SCREEN_WIDTH - 20, [_conentLabel layoutWithContainerSizeHeight:SCREEN_WIDTH - 20 text:_conentLabel.text])];
+//    [_conentLabel alignLeft:_redView];
+//    [_conentLabel layoutBelow:_redView margin:10];
+    
+    //4.YY布局新方式
     [_blackView sizeWith:CGSizeMake(SCREEN_WIDTH, 400)];
     [_blackView alignParentTopWithMargin:kTopHeight + 44];
     [_blackView alignParentLeftWithMargin:0];
     
-    [_redView sizeWith:CGSizeMake(44, 44)];
-    [_redView alignParentTopWithMargin:10];
-    [_redView alignParentLeftWithMargin:10];
+    [_conentLabel sizeWith:CGSizeMake(SCREEN_WIDTH - 20, _contentTextLayoutModel.textLayoutHeight)];
+    [_conentLabel alignParentTopWithMargin:10];
+    [_conentLabel alignParentLeftWithMargin:10];
+    _conentLabel.textLayout = _contentTextLayoutModel.textLayout;
     
-    [_yellowView sizeWith:CGSizeMake(44, 44)];
-    [_yellowView layoutToRightOf:_redView margin:10];
-    [_yellowView alignVerticalCenterOf:_redView];
-    
-    [_conentLabel sizeWith:CGSizeMake(SCREEN_WIDTH - 20, [_conentLabel layoutWithContainerSizeHeight:SCREEN_WIDTH - 20 text:_conentLabel.text])];
-    [_conentLabel alignLeft:_redView];
-    [_conentLabel layoutBelow:_redView margin:10];
 }
 
 
