@@ -43,6 +43,7 @@
 		2E3E183A1FD80EDA009D42C2 /* LocationManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E18391FD80EDA009D42C2 /* LocationManger.m */; };
 		2E3E183C1FD80FA9009D42C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E3E183B1FD80F9E009D42C2 /* CoreLocation.framework */; };
 		2E3E183F1FD81068009D42C2 /* PlaceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3E183E1FD81068009D42C2 /* PlaceModel.m */; };
+		2EAA5AEC1FDCD75300D9BED0 /* YYLabel+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA5AEB1FDCD75300D9BED0 /* YYLabel+Tool.m */; };
 		2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */; };
 		2EC756F71FD6C99000EFC3EC /* TMCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756F21FD6C99000EFC3EC /* TMCacheManager.m */; };
 		2ED8F3031FDB77AB00BF0C47 /* UIView+CustomAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED8F3021FDB77AA00BF0C47 /* UIView+CustomAutoLayout.m */; };
@@ -126,6 +127,8 @@
 		2E3E183B1FD80F9E009D42C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2E3E183D1FD81067009D42C2 /* PlaceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceModel.h; sourceTree = "<group>"; };
 		2E3E183E1FD81068009D42C2 /* PlaceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceModel.m; sourceTree = "<group>"; };
+		2EAA5AEA1FDCD75300D9BED0 /* YYLabel+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYLabel+Tool.h"; sourceTree = "<group>"; };
+		2EAA5AEB1FDCD75300D9BED0 /* YYLabel+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YYLabel+Tool.m"; sourceTree = "<group>"; };
 		2EC756E71FD6C99000EFC3EC /* TableViewCacheHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCacheHeight.h; sourceTree = "<group>"; };
 		2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCacheHeight.m; sourceTree = "<group>"; };
 		2EC756F11FD6C99000EFC3EC /* TMCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCacheManager.h; sourceTree = "<group>"; };
@@ -306,6 +309,8 @@
 				2E0D49DE1FD3C51500F17CD9 /* UIView+Tools.m */,
 				2E0D4A021FD3D33A00F17CD9 /* UIView+XYYFrame.h */,
 				2E0D4A031FD3D33A00F17CD9 /* UIView+XYYFrame.m */,
+				2EAA5AEA1FDCD75300D9BED0 /* YYLabel+Tool.h */,
+				2EAA5AEB1FDCD75300D9BED0 /* YYLabel+Tool.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -596,6 +601,7 @@
 				2E0D49FE1FD3CB7100F17CD9 /* Utility.m in Sources */,
 				2E0D49EE1FD3C51600F17CD9 /* NSObject+Until.m in Sources */,
 				2E0D4A041FD3D33A00F17CD9 /* UIView+XYYFrame.m in Sources */,
+				2EAA5AEC1FDCD75300D9BED0 /* YYLabel+Tool.m in Sources */,
 				2E3010C81FD57DCB00B92997 /* NSDictionary+Tools.m in Sources */,
 				2E3E183A1FD80EDA009D42C2 /* LocationManger.m in Sources */,
 				2E0D49F71FD3C62400F17CD9 /* BaseModel.m in Sources */,

@@ -29,5 +29,6 @@
 #import "NSString+Tools.h"
 #import "UIDevice+verson.h"
 #import "UIView+CustomAutoLayout.h"
+#import "YYLabel+Tool.h"
 
 #endif /* CatagoryHeader_h */
