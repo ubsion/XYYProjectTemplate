@@ -13,5 +13,6 @@ pod 'YYText'
 pod 'TMCache', '~> 2.1.0'
 pod 'Reachability', '~> 3.2'
 pod 'YYModel'
+pod 'XYYKit'
 
 end

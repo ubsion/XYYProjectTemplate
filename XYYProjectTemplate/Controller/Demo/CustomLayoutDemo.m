@@ -120,6 +120,9 @@
     [_conentLabel alignParentLeftWithMargin:10];
     _conentLabel.textLayout = _contentTextLayoutModel.textLayout;
     
+    
+    
+    
 }
 
 

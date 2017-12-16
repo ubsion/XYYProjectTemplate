@@ -67,7 +67,7 @@
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     self.view.backgroundColor = [UIColor whiteColor];
     //自己调用自己
-    
+    [self addSubviews];
 }
 
 -(void)viewDidLayoutSubviews
@@ -348,4 +348,10 @@
     }];
     [alertController addAction:action];
 }
+
+#pragma mark - ******* 添加当前页面UI *********
+-(void)addSubviews
+{
+}
+
 @end

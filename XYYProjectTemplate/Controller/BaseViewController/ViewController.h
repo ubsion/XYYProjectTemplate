@@ -53,5 +53,8 @@
 -(void)addCancelActionTarget:(UIAlertController*)alertController title:(NSString *)title;
 
 -(void)addCancelActionTarget:(UIAlertController*)alertController title:(NSString *)title action:(void(^)(UIAlertAction *action))actionTarget;
+
+-(void)addSubviews;
+
 @end
 

@@ -31,6 +31,7 @@
 #import "CatagoryHeader.h"
 #import "Utility.h"
 #import <objc/runtime.h>
+#import "CustomUIHeader.h"
 
 /*添加需要全局化的实体类*/
 #import "PlaceModel.h"
