@@ -11,7 +11,6 @@
 		2E0D49A51FD3AE8D00F17CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D49A41FD3AE8D00F17CD9 /* Assets.xcassets */; };
 		2E0D49AB1FD3AE8D00F17CD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49AA1FD3AE8D00F17CD9 /* main.m */; };
 		2E0D49BA1FD3B5DE00F17CD9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49B91FD3B5DE00F17CD9 /* MainViewController.m */; };
-		2E0D49BD1FD3B97200F17CD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D49BC1FD3B97200F17CD9 /* Images.xcassets */; };
 		2E0D49D41FD3C44B00F17CD9 /* SS_NavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49D31FD3C44B00F17CD9 /* SS_NavBarView.m */; };
 		2E0D49EA1FD3C51600F17CD9 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49D91FD3C51500F17CD9 /* UIColor+YYAdd.m */; };
 		2E0D49EB1FD3C51600F17CD9 /* UIImage+TIXACategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49DA1FD3C51500F17CD9 /* UIImage+TIXACategory.m */; };
@@ -47,6 +46,7 @@
 		2E8BE31D1FE5123000CE796B /* LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE3181FE5123000CE796B /* LoadView.m */; };
 		2E8BE31E1FE5123000CE796B /* AlertHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE31B1FE5123000CE796B /* AlertHelp.m */; };
 		2E8BE3221FE5141F00CE796B /* CostomDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE3211FE5141F00CE796B /* CostomDemo.m */; };
+		2E8BE3251FE523D500CE796B /* XYYViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE3241FE523D500CE796B /* XYYViewDemo.m */; };
 		2EAA5AF51FDCE75800D9BED0 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA5AF21FDCE75700D9BED0 /* UIView+YYAdd.m */; };
 		2EAA5AF61FDCE75800D9BED0 /* YYLabel+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA5AF41FDCE75700D9BED0 /* YYLabel+Tool.m */; };
 		2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */; };
@@ -68,7 +68,6 @@
 		2E0D49B81FD3B5DE00F17CD9 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		2E0D49B91FD3B5DE00F17CD9 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		2E0D49BB1FD3B6C100F17CD9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		2E0D49BC1FD3B97200F17CD9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E0D49BF1FD3B9FE00F17CD9 /* MacroDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroDefinition.h; sourceTree = "<group>"; };
 		2E0D49D21FD3C44B00F17CD9 /* SS_NavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SS_NavBarView.h; sourceTree = "<group>"; };
 		2E0D49D31FD3C44B00F17CD9 /* SS_NavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SS_NavBarView.m; sourceTree = "<group>"; };
@@ -141,6 +140,8 @@
 		2E8BE31C1FE5123000CE796B /* LoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadView.h; sourceTree = "<group>"; };
 		2E8BE3201FE5141F00CE796B /* CostomDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CostomDemo.h; sourceTree = "<group>"; };
 		2E8BE3211FE5141F00CE796B /* CostomDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CostomDemo.m; sourceTree = "<group>"; };
+		2E8BE3231FE523D500CE796B /* XYYViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYYViewDemo.h; sourceTree = "<group>"; };
+		2E8BE3241FE523D500CE796B /* XYYViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYYViewDemo.m; sourceTree = "<group>"; };
 		2EAA5AF11FDCE75700D9BED0 /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		2EAA5AF21FDCE75700D9BED0 /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
 		2EAA5AF31FDCE75700D9BED0 /* YYLabel+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYLabel+Tool.h"; sourceTree = "<group>"; };
@@ -212,7 +213,6 @@
 				2E0D49A91FD3AE8D00F17CD9 /* Info.plist */,
 				2E0D49AA1FD3AE8D00F17CD9 /* main.m */,
 				2E0D49BB1FD3B6C100F17CD9 /* PrefixHeader.pch */,
-				2E0D49BC1FD3B97200F17CD9 /* Images.xcassets */,
 			);
 			path = XYYProjectTemplate;
 			sourceTree = "<group>";
@@ -220,6 +220,8 @@
 		2E0D49B11FD3AF0C00F17CD9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2E8BE3231FE523D500CE796B /* XYYViewDemo.h */,
+				2E8BE3241FE523D500CE796B /* XYYViewDemo.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -567,7 +569,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E0D49A51FD3AE8D00F17CD9 /* Assets.xcassets in Resources */,
-				2E0D49BD1FD3B97200F17CD9 /* Images.xcassets in Resources */,
 				2E0D4A141FD3E24300F17CD9 /* home_app_logo@2x.png in Resources */,
 				2E0D4A161FD3E35000F17CD9 /* navi_back@2x.png in Resources */,
 			);
@@ -597,13 +598,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYYProjectTemplate-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CE5A8149D29ADA76B57C3B94 /* [CP] Copy Pods Resources */ = {
@@ -612,9 +616,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XYYProjectTemplate/Pods-XYYProjectTemplate-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -646,6 +654,7 @@
 				2E0D49F31FD3C51600F17CD9 /* NSObject+Motis.m in Sources */,
 				2E0D49EB1FD3C51600F17CD9 /* UIImage+TIXACategory.m in Sources */,
 				2E0D49FB1FD3C73000F17CD9 /* UserInfoModel.m in Sources */,
+				2E8BE3251FE523D500CE796B /* XYYViewDemo.m in Sources */,
 				2E3010CB1FD57E0F00B92997 /* NSString+Tools.m in Sources */,
 				2E0D49EF1FD3C51600F17CD9 /* NSString+filePath.m in Sources */,
 				2E0D49F21FD3C51600F17CD9 /* UIDevice+verson.m in Sources */,
