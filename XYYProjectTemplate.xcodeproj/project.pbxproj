@@ -27,8 +27,6 @@
 		2E0D49FE1FD3CB7100F17CD9 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D49FC1FD3CB7100F17CD9 /* Utility.m */; };
 		2E0D4A0D1FD3DD0C00F17CD9 /* NetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A0C1FD3DD0C00F17CD9 /* NetworkReachability.m */; };
 		2E0D4A111FD3E1A000F17CD9 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A101FD3E1A000F17CD9 /* DetailViewController.m */; };
-		2E0D4A141FD3E24300F17CD9 /* home_app_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D4A131FD3E24300F17CD9 /* home_app_logo@2x.png */; };
-		2E0D4A161FD3E35000F17CD9 /* navi_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E0D4A151FD3E35000F17CD9 /* navi_back@2x.png */; };
 		2E0D4A1A1FD3E6AB00F17CD9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A191FD3E6AB00F17CD9 /* ViewController.m */; };
 		2E0D4A211FD4041900F17CD9 /* XYYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A201FD4041900F17CD9 /* XYYTableViewController.m */; };
 		2E0D4A241FD415A200F17CD9 /* XYYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D4A231FD415A200F17CD9 /* XYYTableViewCell.m */; };
@@ -47,6 +45,7 @@
 		2E8BE31E1FE5123000CE796B /* AlertHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE31B1FE5123000CE796B /* AlertHelp.m */; };
 		2E8BE3221FE5141F00CE796B /* CostomDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE3211FE5141F00CE796B /* CostomDemo.m */; };
 		2E8BE3251FE523D500CE796B /* XYYViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8BE3241FE523D500CE796B /* XYYViewDemo.m */; };
+		2E8BE3271FE524D100CE796B /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8BE3261FE524D100CE796B /* images.xcassets */; };
 		2EAA5AF51FDCE75800D9BED0 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA5AF21FDCE75700D9BED0 /* UIView+YYAdd.m */; };
 		2EAA5AF61FDCE75800D9BED0 /* YYLabel+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA5AF41FDCE75700D9BED0 /* YYLabel+Tool.m */; };
 		2EC756F31FD6C99000EFC3EC /* TableViewCacheHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC756E81FD6C99000EFC3EC /* TableViewCacheHeight.m */; };
@@ -103,8 +102,6 @@
 		2E0D4A0C1FD3DD0C00F17CD9 /* NetworkReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkReachability.m; sourceTree = "<group>"; };
 		2E0D4A0F1FD3E1A000F17CD9 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		2E0D4A101FD3E1A000F17CD9 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		2E0D4A131FD3E24300F17CD9 /* home_app_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_app_logo@2x.png"; sourceTree = "<group>"; };
-		2E0D4A151FD3E35000F17CD9 /* navi_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_back@2x.png"; sourceTree = "<group>"; };
 		2E0D4A181FD3E6AB00F17CD9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2E0D4A191FD3E6AB00F17CD9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2E0D4A1F1FD4041900F17CD9 /* XYYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYYTableViewController.h; sourceTree = "<group>"; };
@@ -142,6 +139,7 @@
 		2E8BE3211FE5141F00CE796B /* CostomDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CostomDemo.m; sourceTree = "<group>"; };
 		2E8BE3231FE523D500CE796B /* XYYViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYYViewDemo.h; sourceTree = "<group>"; };
 		2E8BE3241FE523D500CE796B /* XYYViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYYViewDemo.m; sourceTree = "<group>"; };
+		2E8BE3261FE524D100CE796B /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		2EAA5AF11FDCE75700D9BED0 /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		2EAA5AF21FDCE75700D9BED0 /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
 		2EAA5AF31FDCE75700D9BED0 /* YYLabel+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YYLabel+Tool.h"; sourceTree = "<group>"; };
@@ -280,7 +278,7 @@
 		2E0D49B71FD3B51400F17CD9 /* Reosource */ = {
 			isa = PBXGroup;
 			children = (
-				2E0D4A121FD3E23900F17CD9 /* sysRes */,
+				2E8BE3261FE524D100CE796B /* images.xcassets */,
 			);
 			path = Reosource;
 			sourceTree = "<group>";
@@ -382,15 +380,6 @@
 				2ED8F3051FDB781200BF0C47 /* CustomLayoutDemo.m */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		2E0D4A121FD3E23900F17CD9 /* sysRes */ = {
-			isa = PBXGroup;
-			children = (
-				2E0D4A151FD3E35000F17CD9 /* navi_back@2x.png */,
-				2E0D4A131FD3E24300F17CD9 /* home_app_logo@2x.png */,
-			);
-			path = sysRes;
 			sourceTree = "<group>";
 		};
 		2E0D4A171FD3E68600F17CD9 /* BaseViewController */ = {
@@ -569,8 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E0D49A51FD3AE8D00F17CD9 /* Assets.xcassets in Resources */,
-				2E0D4A141FD3E24300F17CD9 /* home_app_logo@2x.png in Resources */,
-				2E0D4A161FD3E35000F17CD9 /* navi_back@2x.png in Resources */,
+				2E8BE3271FE524D100CE796B /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
